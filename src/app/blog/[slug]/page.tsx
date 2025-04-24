@@ -2,14 +2,7 @@ import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/strapi";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { marked } from "marked";
-// import type { Metadata } from "next";
 
-// --- Types ---
-// type PageProps = {
-//   params: {
-//     slug: string;
-//   };
-// };
 
 // --- Generate Static Paths ---
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
@@ -18,47 +11,6 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
     slug: post.attributes.slug,
   }));
 }
-
-// --- Generate Metadata ---
-// export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-
-//   const slug = (await params).slug;
-//   const post = await getBlogPostBySlug(slug);
-
-//   if (!post) {
-//     return {
-//       title: "Post Not Found",
-//       description: "The requested blog post could not be found.",
-//     };
-//   }
-
-//   const { title, description, featuredimage } = post.attributes;
-
-//   return {
-//     title: title,
-//     description: description || "Read this article on the blog.",
-//     openGraph: {
-//       title,
-//       description: description || "",
-//       images: [
-//         {
-//           url: `${process.env.NEXT_PUBLIC_STRAPI_URL}${featuredimage?.data?.attributes?.url || "/og-image.jpg"}`,
-//           width: 1200,
-//           height: 630,
-//           alt: title,
-//         },
-//       ],
-//     },
-//     twitter: {
-//       card: "summary_large_image",
-//       title,
-//       description: description || "",
-//       images: [
-//         `${process.env.NEXT_PUBLIC_STRAPI_URL}${featuredimage?.data?.attributes?.url || "/og-image.jpg"}`,
-//       ],
-//     },
-//   };
-// }
 
 // --- Calculate Reading Time ---
 function calculateReadingTime(content: string): number {

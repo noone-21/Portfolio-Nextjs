@@ -272,7 +272,7 @@ export default function AboutPage() {
                       </blockquote>
                       <div className="flex items-center gap-3">
                         <div className="h-10 w-10 rounded-full bg-primary/10">
-                          <Image src="/assets/img/avatar2.jpg" alt="Client" width={40} height={40} className="h-full w-full rounded-full object-cover" />
+                          <Image src="/assets/img/avatar3.png" alt="Client" width={40} height={40} className="h-full w-full rounded-full object-cover" />
                         </div>
                         <div>
                           <h4 className="font-medium text-dark dark:text-light">Trevor Greer</h4>

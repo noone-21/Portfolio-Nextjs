@@ -31,7 +31,7 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
-  // swcMinify: true,
+  swcMinify: true,
   // Add caching headers
   async headers() {
     return [
@@ -69,10 +69,12 @@ const nextConfig = {
     // Handle static files
     config.module.rules.push({
       test: /\.(png|jpg|gif|svg)$/i,
-      type: 'asset/resource',
-      generator: {
-        filename: 'static/media/[name].[hash][ext]',
-      },
+      issuer: /\.[jt]sx?$/,
+      use: [
+        {
+          loader: 'next-image-loader',
+        },
+      ],
     });
 
     // Ensure public directory is copied
