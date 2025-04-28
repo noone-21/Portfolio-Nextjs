@@ -5,7 +5,6 @@ import  ThemeProvider  from "@/components/ThemeProvider";
 import Header from "@/components/Header";
 import Background from "@/components/Background";
 import Footer from "@/components/Footer";
-import Analytics from "@/components/Analytics";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,33 +20,33 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://duhonyoung.com'),
-  title: "Duhon Young -- DY Productions",
-  description: "Full Stack Developer & Graphic Designer",
+  title: "Danish Ahmed -- It's Me Danii",
+  description: "Full Stack Developer",
   keywords: "web development, full stack developer, graphic design, portfolio",
-  authors: [{ name: "Duhon Young" }],
-  creator: "Duhon Young",
-  publisher: "DY Productions",
+  authors: [{ name: "Danish Ahmed" }],
+  creator: "Danish Ahmed",
+  publisher: "It's Me Danii",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://duhonyoung.com",
-    siteName: "Duhon Young Portfolio",
-    title: "Duhon Young -- DY Productions",
-    description: "Full Stack Developer & Graphic Designer",
+    siteName: "Danish Ahmed Portfolio",
+    title: "Danish Ahmed -- It's Me Danii",
+    description: "Full Stack Developer",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Duhon Young Portfolio",
+        alt: "Danish Ahmed Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Duhon Young -- DY Productions",
-    description: "Full Stack Developer & Graphic Designer",
+    title: "Danish Ahmed -- It's Me Danii",
+    description: "Full Stack Developer",
     images: ["/og-image.jpg"],
   },
 };
@@ -82,7 +81,6 @@ export default function RootLayout({
           </div>
         </ThemeProvider>
         <Footer />
-        <Analytics />
       </body>
     </html>
   );

@@ -31,7 +31,7 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: true,
+  // swcMinify: true,
   // Add caching headers
   async headers() {
     return [

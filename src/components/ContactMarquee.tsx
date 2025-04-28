@@ -9,13 +9,13 @@ export default function ContactMarquee() {
             {"Available For Hire 🚀 Crafting Digital Experiences 🎨"}
           </span>
           <span className="relative inline-block whitespace-nowrap text-base font-medium text-muted transition before:mr-2 before:content-['\2022']">
-            {"Web Development  💻  Branding  🎨  Video Editing  🎥"}
+            {"Web Development  💻  UI/UX  🎨"}
           </span>
           <span className="relative inline-block whitespace-nowrap text-base font-medium text-muted transition before:mr-2 before:content-['\2022']">
             {"Available For Hire 🚀 Crafting Digital Experiences 🎨"}
           </span>
           <span className="relative inline-block whitespace-nowrap text-base font-medium text-muted transition before:mr-2 before:content-['\2022']">
-            {"Web Development  💻  Branding  🎨  Video Editing  🎥"}
+            {"Web Development  💻  UI/UX  🎨"}
           </span>
         </div>
         <div className="relative flex min-w-full shrink-0 animate-infinite-scroll gap-4 group-hover:[animation-play-state:paused]">
@@ -23,13 +23,13 @@ export default function ContactMarquee() {
             {"Available For Hire 🚀 Crafting Digital Experiences 🎨"}
           </span>
           <span className="relative inline-block whitespace-nowrap text-base font-medium text-muted transition before:mr-2 before:content-['\2022']">
-            {"Web Development  💻  Branding  🎨  Video Editing  🎥"}
+            {"Web Development  💻  UI/UX  🎨"}
           </span>
           <span className="relative inline-block whitespace-nowrap text-base font-medium text-muted transition before:mr-2 before:content-['\2022']">
             {"Available For Hire 🚀 Crafting Digital Experiences 🎨"}
           </span>
           <span className="relative inline-block whitespace-nowrap text-base font-medium text-muted transition before:mr-2 before:content-['\2022']">
-            {"Web Development  💻  Branding  🎨  Video Editing  🎥"}
+            {"Web Development  💻  UI/UX  🎨"}
           </span>
         </div>
       </div>

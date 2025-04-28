@@ -207,7 +207,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-dark dark:text-light">Phone</h3>
-                    <p className="mt-1 text-muted dark:text-light/70">{"+1 (469) 607-9484"}</p>
+                    <p className="mt-1 text-muted dark:text-light/70">{"+92 313-4856652"}</p>
                   </div>
                 </div>
               </div>
@@ -230,7 +230,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-dark dark:text-light">Email</h3>
-                    <p className="mt-1 text-muted dark:text-light/70">dmyproduct@gmail.com</p>
+                    <p className="mt-1 text-muted dark:text-light/70">ahmed.danish800@gmail.com</p>
                   </div>
                 </div>
               </div>

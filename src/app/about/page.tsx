@@ -25,22 +25,18 @@ export default function AboutPage() {
           <div className="flex flex-col-reverse items-start gap-6 lg:flex-row lg:gap-10">
             <div>
               <h2 className="text-3xl font-semibold text-dark dark:text-muted lg:text-[40px]">
-                Hi, This Is <span className="text-primary">Duhon Young</span> 👋
+                Hi, This Is <span className="text-primary">Danish Ahmed</span> 👋
               </h2>
               <p className="mt-4 text-lg text-muted dark:text-light/70 lg:mt-6 lg:text-2xl">
                 A Passionate
                 <span className="font-semibold text-dark dark:text-white">
                   {' '}Full Stack Developer{' '}
                 </span>
-                🖥️ &
-                <span className="font-semibold text-dark dark:text-white">
-                  {' '}Server Administrator{' '}
-                </span>
-                with
+                {/* with
                 <span className="font-semibold text-dark dark:text-white">
                   {' '}9+ years{' '}
                 </span>
-                of Experience
+                of Experience */}
               </p>
             </div>
             <div className="flex items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-light px-4 py-2 text-center text-base font-medium leading-none text-primary dark:bg-dark-2 lg:text-lg">
@@ -56,19 +52,19 @@ export default function AboutPage() {
             <div className="flex flex-wrap items-start gap-6 lg:gap-10">
               <div>
                 <h2 className="text-3xl font-semibold text-dark dark:text-light lg:text-[40px]">
-                  <Counter target={8} duration={2000} />+
+                  <Counter target={2} duration={2000} />+
                 </h2>
-                <p className="mt-2 text-muted">Years of Experience</p>
+                <p className="mt-2 text-muted">Year of Experience</p>
               </div>
               <div>
                 <h2 className="text-3xl font-semibold text-dark dark:text-light lg:text-[40px]">
-                  <Counter target={27} duration={2000} />+
+                  <Counter target={3} duration={2000} />
                 </h2>
-                <p className="mt-2 text-muted">Project Completed</p>
+                <p className="mt-2 text-muted">Projects Completed</p>
               </div>
               <div>
                 <h2 className="text-3xl font-semibold text-dark dark:text-light lg:text-[40px]">
-                  <Counter target={24} duration={2000} />+
+                  <Counter target={3} duration={2000} />
                 </h2>
                 <p className="mt-2 text-muted">Happy Clients</p>
               </div>
@@ -115,13 +111,13 @@ export default function AboutPage() {
                 <p className="text-muted mt-2">Experienced in both front-end and back-end development using modern technologies.</p>
               </div>
               <div className="p-6 bg-light rounded-lg shadow-lg dark:bg-dark-2">
-                <h5 className="font-medium text-dark dark:text-light">Graphic Design</h5>
-                <p className="text-muted mt-2">Proficient in Adobe Creative Suite, delivering visually compelling designs.</p>
+                <h5 className="font-medium text-dark dark:text-light">UI/UX Design</h5>
+                <p className="text-muted mt-2">Proficient in Figma, Canva delivering visually compelling designs.</p>
               </div>
-              <div className="p-6 bg-light rounded-lg shadow-lg dark:bg-dark-2">
+              {/* <div className="p-6 bg-light rounded-lg shadow-lg dark:bg-dark-2">
                 <h5 className="font-medium text-dark dark:text-light">SEO & Digital Marketing</h5>
                 <p className="text-muted mt-2">Helping businesses grow online by improving search engine rankings and visibility.</p>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -180,7 +176,7 @@ export default function AboutPage() {
           {/* Reviews */}
           <div className="mt-10 lg:mt-14">
             <h3 className="text-2xl font-medium text-dark dark:text-light lg:text-3xl mb-8">
-              Trusted By 20+ Clients
+              Trusted By Clients
             </h3>
 
             <Carousel
@@ -203,10 +199,10 @@ export default function AboutPage() {
                           <Image src="/assets/img/star-full.svg" alt="" width={16} height={16} className="h-4 w-4 shrink-0" />
                         </div>
                         <a
-                          href="https://www.nbcareercenter.net"
+                          href="https://www.freelancer.com/u/ahmeddanish800?review_context_id=34426231&review_type=project&reviewee_role=freelancer&frm=ahmeddanish800&sb=t"
                           className="inline-flex items-center gap-2 rounded bg-white px-2 py-1 text-sm leading-none text-primary transition hover:bg-primary hover:text-white dark:bg-black"
                         >
-                          <span>nbcareercenter.net</span>
+                          <span>HTML CSS Flexbox</span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 14 15"
@@ -222,22 +218,21 @@ export default function AboutPage() {
                         </a>
                       </div>
                       <blockquote className="text-muted dark:text-light/70">
-                        {"Duhon delivered an outstanding website for our career center. The user-friendly design and functionality have significantly increased our traffic and profits. Their professionalism and attention to detail made the entire process seamless. Highly recommend!"}
+                        {"I loved working with Danish... he understood my requirement and delivered it on budget...patiently heard what I wanted and communicated everything on the progress..he patiently made changes I asked..full marks..highly recommend"}
                       </blockquote>
                       <div className="flex items-center gap-3">
                         <div className="h-10 w-10 rounded-full bg-primary/10">
-                          <Image src="/assets/img/avatar3.png" alt="Client" width={40} height={40} className="h-full w-full rounded-full object-cover" />
+                          <Image src="/assets/img/avatar.jpg" alt="Client" width={40} height={40} className="h-full w-full rounded-full object-cover" />
                         </div>
                         <div>
-                          <h4 className="font-medium text-dark dark:text-light">Alteata Fox</h4>
-                          <p className="text-sm text-muted">Marketing Manager</p>
+                          <h4 className="font-medium text-dark dark:text-light">Nazurudeen J.</h4>
                         </div>
                       </div>
                     </div>
                   </div>
                 </CarouselItem>
 
-                <CarouselItem className="basis-full">
+                {/* <CarouselItem className="basis-full">
                   <div className="flex h-full flex-col justify-between rounded-lg bg-light p-6 dark:bg-dark-2">
                     <div className="space-y-4">
                       <div className="flex flex-wrap items-center justify-between gap-4">
@@ -327,7 +322,7 @@ export default function AboutPage() {
                       </div>
                     </div>
                   </div>
-                </CarouselItem>
+                </CarouselItem> */}
               </CarouselContent>
               <CarouselPrevious className="absolute -left-4 top-1/2 -translate-y-1/2" />
               <CarouselNext className="absolute -right-4 top-1/2 -translate-y-1/2" />
