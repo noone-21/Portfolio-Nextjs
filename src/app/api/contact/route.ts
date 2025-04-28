@@ -30,7 +30,7 @@ export async function POST(req: Request) {
         Message: ${message}
       `,
       html: `
-        <h3>New Contact Form Submission</h3>
+        <h3>New Message</h3>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Subject:</strong> ${subject}</p>
