@@ -14,7 +14,7 @@ export default function EducationPage() {
       major: "Computer Science",
       institution: "University of Management and Technology",
       year: "2019 – 2023",
-      logo: "/assets/img/institution/umtLogo.png", // Add your logo path here
+      logo: "/assets/img/institution/UmtLogo.png", // Add your logo path here
     },
     {
       degree: "Intermediate",

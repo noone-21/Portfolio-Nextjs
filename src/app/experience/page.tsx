@@ -25,7 +25,7 @@ export default function ExperiencePage() {
       duration: "March 2024 – May 2024",
       description:
         "Reported to my team lead. Worked on a Danish/Norwegian site, Dansk Tandforsikring, adding new features and tackling site issues. Learned technologies like NextJs and VueJs.",
-      logo: "/assets/img/company/techscaleLogo.jpg",
+      logo: "/assets/img/company/techScaleLogo.jpg",
       href: "https://techscale.io",
     },
     {
