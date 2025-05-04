@@ -1,7 +1,9 @@
-'use client';
+"use client";
 
 import Intro from "@/components/Intro";
 import AnimatedSection from "@/components/ui/animated-section";
+import Image from "next/image";
+import Link from "next/link";
 
 // Enable ISR
 // export const revalidate = 60;
@@ -13,21 +15,27 @@ export default function ExperiencePage() {
       company: "Upvave",
       duration: "March 2025 – Present",
       description:
-        "Learned new technologies like Dockerand Graphql. Worked on fixing errors in a real world Next Js project. Nextjs, MERN Stack, Docker, Graphql, Web Sockets.",
+        "Learned new technologies like Docker and Graphql. Worked on fixing errors in a real-world Next Js project. Nextjs, MERN Stack, Docker, Graphql, Web Sockets.",
+      logo: "/assets/img/company/upvave.png",
+      href: "https://upvave.com",
     },
     {
       role: "React Js Intern",
       company: "Techscale",
       duration: "March 2024 – May 2024",
       description:
-        "Reported to My team lead. Worked on a Danish/Norwegian site, Dansk Tandforsikring, worked on adding some new features and tackling some issues with the site. Worked on learning some new Technologies like NextJs and VueJs." 
+        "Reported to my team lead. Worked on a Danish/Norwegian site, Dansk Tandforsikring, adding new features and tackling site issues. Learned technologies like NextJs and VueJs.",
+      logo: "/assets/img/company/techscaleLogo.jpg",
+      href: "https://techscale.io",
     },
     {
       role: "Frontend Developer Intern",
       company: "Hawk Logix",
       duration: "July 2022 – August 2022",
       description:
-        "Reported to my team lead. I worked on different ReactJs projects and developed several Web apps using the MERN Stack. The most important thing that I learnt was to work on ReactJs and to integrate my ReactJs Frontend with my NodeJs Backend. I got my first Freelance project there and the employer loved my work, left a good review with 5 stars.",
+        "Reported to my team lead. Worked on ReactJs projects and developed web apps using the MERN Stack. Learned ReactJs-NodeJs integration and completed my first freelance project with a 5-star review.",
+      logo: "/assets/img/company/hawklogixLogo.png",
+      href: "https://hawklogix.com",
     },
   ];
 
@@ -45,11 +53,33 @@ export default function ExperiencePage() {
             <div className="bg-white dark:bg-black rounded-xl p-6 shadow-md space-y-6">
               <h2 className="text-2xl font-bold mb-4">Experience</h2>
               {experience.map((exp, idx) => (
-                <div key={idx} className="border-l-4 border-[#FF5500] pl-4 space-y-1">
-                  <h3 className="text-xl font-semibold">{exp.role}</h3>
-                  <p className="text-sm text-muted-foreground">{exp.company}</p>
-                  <p className="text-sm text-muted-foreground">{exp.duration}</p>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">{exp.description}</p>
+                <div
+                  key={idx}
+                  className="border-l-4 border-[#FF5500] pl-4 flex items-start space-x-4"
+                >
+                  <Link href={exp.href} className="block">
+                    <div className="w-12 h-12">
+                      <Image
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        width={48}
+                        height={48}
+                        className="w-12 h-12 object-contain rounded"
+                      />
+                    </div>
+                  </Link>
+                  <div className="space-y-1">
+                    <h3 className="text-xl font-semibold">{exp.role}</h3>
+                    <p className="text-sm text-muted-foreground">
+                      {exp.company}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      {exp.duration}
+                    </p>
+                    <p className="text-sm text-gray-700 dark:text-gray-300">
+                      {exp.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
