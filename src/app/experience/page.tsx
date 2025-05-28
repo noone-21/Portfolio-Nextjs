@@ -13,7 +13,7 @@ export default function ExperiencePage() {
     {
       role: "MERN Stack Developer",
       company: "Upvave",
-      duration: "March 2025 – Present",
+      duration: "March 2025 – May 2025",
       description:
         "Learned new technologies like Docker and Graphql. Worked on fixing errors in a real-world Next Js project. Nextjs, MERN Stack, Docker, Graphql, Web Sockets.",
       logo: "/assets/img/company/upvave.png",
